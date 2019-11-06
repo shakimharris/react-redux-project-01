@@ -19,6 +19,8 @@ constructor (props){
 
   handleChange = event => (
     const {value, name} = event.target;
+
+    this.setState({ [event]: value });
   )
 }
 
