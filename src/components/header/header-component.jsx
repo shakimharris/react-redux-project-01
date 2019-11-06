@@ -1,6 +1,5 @@
-import React from 'react';
+import React from "react";
 
-export default const Header = () => (
+class Header extends React.Component {}
 
-
-);
+export default Header;

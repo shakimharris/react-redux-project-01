@@ -10,6 +10,16 @@ constructor (props){
     email: '',
     password: ''
   }
+
+  handleSubmit = event => (
+    event.preventDefault();
+
+    this.setState({email: '' , password: '' })
+  )
+
+  handleChange = event => (
+    const {value, name} = event.target;
+  )
 }
 
 render() {
@@ -17,11 +27,12 @@ render() {
     <div className="sign-in>
      <h2>I already have an account.  </h2>
      <span>Sign In With Your email and password </span>
-      <form> 
-       <input type="email" name="email" value={this.state.email} />
+      <form onSubmit={this.handleSubmit}> 
+       <input type="email" onChange={handleChange} name="email" value={this.state.email} />
        <label>Email</label>
        <input type="password" name="password" value={this.state.password} />
        <label>Password</label>
+        <input type="submit" value="Submit button" />
       </form>
     </div>
   )
