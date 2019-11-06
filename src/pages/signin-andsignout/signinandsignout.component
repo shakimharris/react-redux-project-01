@@ -17,6 +17,9 @@ render() {
     <div className="sign-in>
      <h2>I already have an account.  </h2>
      <span>Sign In With Your email and password </span>
+      <form> 
+       <input type="email" name="email" value={this.state.email} />
+      </form>
     </div>
   )
 }
