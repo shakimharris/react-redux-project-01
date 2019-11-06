@@ -19,6 +19,9 @@ render() {
      <span>Sign In With Your email and password </span>
       <form> 
        <input type="email" name="email" value={this.state.email} />
+       <label>Email</label>
+       <input type="password" name="password" value={this.state.password} />
+       <label>Password</label>
       </form>
     </div>
   )
